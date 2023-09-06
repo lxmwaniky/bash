@@ -1,6 +1,5 @@
 #!/bin/bash
-echo "Enter Your Name: "
-read name
+read -p "Enter your name: " name
 echo "Hello $name,"
 sleep 2
 echo "It's currently $(date)"
