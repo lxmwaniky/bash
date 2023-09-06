@@ -1,19 +1,15 @@
 #!/bin/bash
 echo "Enter Your Name: "
 read name
-who=$(whoami)
-where=$(pwd)
-what=$(ls)
-when=$(date)
 echo "Hello $name,"
 sleep 2
-echo "It's currently $when"
+echo "It's currently $(date)"
 sleep 2
-echo "You are logged in as $who"
+echo "You are logged in as $(whoami)"
 sleep 2
-echo "You are currently in the $where directory"
+echo "You are currently in the $(pwd) directory"
 sleep 2
-echo "The $where directory contains the following:"
+echo "The $(pwd) directory contains the following:"
 sleep 1
-echo "$what"
+echo "$(ls)"
 
